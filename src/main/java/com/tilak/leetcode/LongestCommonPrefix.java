@@ -2,7 +2,7 @@ package com.tilak.leetcode;
 
 public class LongestCommonPrefix {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		String[] strArray = { "flower", "flow", "flute" };
 		System.out.println("Prefix is = "+findLongestPrefix(strArray));
 		
@@ -12,8 +12,11 @@ public class LongestCommonPrefix {
 
 	}
 
-	private static String findLongestPrefix(String[] strArray) {
+	private static String findLongestPrefix(String[] strArray) throws Exception {
 
+		if (strArray == null||strArray.length == 0) {
+			throw new Exception("Please give the correct strings");
+		}
 		String prefix = strArray[0];
 		
 		//start iterating form second element and check if it has prefix
