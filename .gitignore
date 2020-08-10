@@ -1,4 +1,8 @@
+.class
+.settings
 .classpath
-.project
-.settings/
-*/target/**
+.jar
+.DS_Store
+target/*
+.html
+test-output/*
