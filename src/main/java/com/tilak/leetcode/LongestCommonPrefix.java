@@ -35,5 +35,4 @@ public class LongestCommonPrefix {
 		
 		return prefix;
 	}
-
 }
